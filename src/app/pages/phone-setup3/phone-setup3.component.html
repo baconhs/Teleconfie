@@ -1,0 +1,9 @@
+<div class="phone-setup3" style='text-align:center;'> <img class="logo-phone" style="margin-bottom:30%;"  src="assets/graphics/icons/logo.png" alt="">
+	<br>
+    <span style="font-size:1.25em;">Enter your passphrase to join a room </span> <br>
+	<span style="font-size:1.25em; color: red;" *ngIf="error"> No rooms found with that PassPhrase </span>
+	 <input class="inputs"type="text" style="margin-top:10%;"placeholder="Passphrase" name="Passphrase" [(ngModel)]="passphrase"><br>
+	 <a (click)="joinRoom(passphrase);">
+	 	<input class='buttons' type="submit"  name="Join" value="Join">
+	 </a>
+</div>

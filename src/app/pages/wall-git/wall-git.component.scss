@@ -1,0 +1,73 @@
+.wall-git {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.logo-wall {
+	position: fixed;
+	top:20px;
+	left:20px;
+	height: 21.739%;
+	width: 5.208%;
+}
+
+.header-area {
+	height: 12%;
+}
+
+.git-header {
+	text-decoration: underline;
+	text-align: center;
+	width: 100%;
+}
+
+.commits-area {
+	height: 100%;
+ 	overflow-y: scroll;
+ 	display: flex;
+ 	flex-direction: row;
+}
+
+.left-area{
+	width: 35%;
+}
+
+.mid-area {
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+}
+
+.right-area{
+	width: 35%;
+}
+
+.commits{
+	height: 100%;
+	margin-left: 15%;
+	margin-right: 15%;
+	height: 17%;
+	min-height: 17%;
+	width: 70%;
+	background-color: #2e2e2e;
+	margin-top:1%;
+	border-radius: 20px;
+}
+
+.commit-message{
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden; 
+	margin-top: 2%;
+	margin-left: 2%;
+	font-size: 1.3em;
+}
+
+.commit-info{
+	margin-left: 2%;
+}
+
+
+

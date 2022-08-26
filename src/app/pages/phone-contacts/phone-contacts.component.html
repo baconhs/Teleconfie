@@ -1,0 +1,47 @@
+<div class="phone-contacts" (click) = "hideOptions()">
+	<div class="contacts-chat">
+        <div class="contacts-rec">
+            <div class="placement">
+                Contacts
+            </div>
+        </div>
+        <a [routerLink]="['/chat-rooms']">
+            <div class="chat-rec">
+                <div class="placement">
+                    Chat
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="add_area">
+        <img id="add" src="assets/graphics/icons/add.png">
+        <div id="myModal" class="modal">
+              <div class="modal-content">
+                <span class="close" style="display: none;">&times;</span>
+                <div class="create-contact"><b>Create contact</b></div>
+                <input class="inputs" id="name" type="text" placeholder="Name" name="Name">
+                <input class="inputs" id ="email" type="text" placeholder="Email" name="Email"><br>
+                <input class='buttons' type="submit" name="Create" id="create" (click)="addContact()" value="Create">
+              </div>
+        </div>
+    </div>
+    <div class ="stuff" *ngFor = "let Contact of Contacts; let i = index;">
+             <div class ="letter" *ngIf = "Contact[0] === Contact[i] || Contact[0].toUpperCase() !== Contacts[i-1][0].toUpperCase()"> <b>{{Contact[0].toUpperCase()}}</b><br></div>
+             <div class="contact">
+                 <div class="circle-area">
+                    <div class="contact-circle">
+                        {{Contact[0].toUpperCase()}}
+                    </div>
+                </div>
+                <div class="contact-name"><div class="text-placement">{{Contact}}</div></div>
+                <div class="options-icon" (click)="showOptions(i); $event.stopPropagation()">
+                    <img class="icon" src="assets/graphics/icons/show-more-button-with-three-dots.svg">
+                    <div id="{{ 'optionnum' + i }}" class="options">
+                        <div class="option" (click)="invite(Contact)">Invite to call</div>
+                        <div class="option" (click) = "createChat(Contact)">Message</div>
+                        <div class="option"style="color:#e86969" (click) = "deleteContact(i)">Delete Contact</div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>

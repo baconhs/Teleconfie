@@ -1,0 +1,196 @@
+.phone-contacts{
+    height: 100%;
+    overflow-y:auto;
+}
+
+.contacts-chat{ 
+    width: 100%;
+    height:70px;
+    margin-bottom: 2vh;
+}
+
+.contacts-rec{
+    float:left;
+    width: 50%;
+    height: 100%;
+    display: table;
+}
+
+.placement {
+    font-size: 1.7em;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+    color:#e9e9e9;
+}
+
+.chat-rec {
+    float: right;
+    width: 50%;
+    height: 100%;
+    display: table;
+    background-color:#545454;
+}
+
+.letter{
+    width: 100%;
+    height: 2%;
+    margin-left: 6%;
+    line-height: 1;
+    margin-bottom: 1vh;
+    margin-top:1vh;
+}
+
+.contact{
+    margin-left: 5%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-circle{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 1.5em;
+    background-color:#2699fb;
+}
+
+.contact-name{
+    width: 65%;
+}
+
+.options-icon{
+    width: 10%;
+    position: relative;
+}
+
+.icon{
+    vertical-align: top;
+    margin-top:12.5px;
+    margin-bottom:12.5px;
+    height: 35px;
+    filter: invert(88%) sepia(39%) saturate(0%) hue-rotate(268deg) brightness(97%) contrast(97%);
+}
+
+.circle-area{
+    width: 20%;
+}
+
+.text-placement {
+    height:20px;
+    margin-top:20px ;
+    margin-bottom:20px;
+    font-weight: bold;
+}
+
+.options{
+    padding-left: 10px;
+    position: absolute;
+    top:0px;
+    padding-top: 5px;
+    left: -120px;
+    width: 160px;
+    background-color:#393939;
+    border-radius: 5px;
+    font-size:1.25em;
+    z-index: 2;
+    display: none;
+}
+
+#add{
+    position: fixed;
+    top:88%;
+    left: 70%;
+}
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 10; /* Sit on top */
+  padding-top: 20vh; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-content{
+    padding: 0; 
+    text-align: center;
+    background-color: #1d1d1d;
+    position: absolute;
+    height: 270px;
+    left: 5vw;
+    width: 90vw;
+}
+
+.create-contact{
+    width: 75%;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    font-size: 1.5em;
+    border-bottom: 1px solid;
+    border-color: #535353;
+    margin-bottom: 10px;
+}
+
+.inputs {
+    margin-top:10px;
+    padding:8px 15px;
+    height: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    border-radius:3px;
+    border:none;
+    font-size:1.5em;
+}
+
+.buttons{
+    border:none;
+    background-color:#B51E23;
+    margin-left: 25%;
+    width: 50%;
+    border-radius: 5px;
+    color:white;
+    border:none;
+    font-size:35px;
+    padding: 5px 20px;
+    text-align:center;
+    text-decoration:none;
+}

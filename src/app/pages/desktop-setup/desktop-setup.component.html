@@ -1,0 +1,10 @@
+{{ipAddress}}
+<ami-fullstack-virtual></ami-fullstack-virtual>
+<ami-fullstack-sensor-loading *ngIf="showSensors"></ami-fullstack-sensor-loading>
+<ami-fullstack-welcome *ngIf="showQRs" [usersNum]="numUsers" (calibrate)="calibrate()"></ami-fullstack-welcome>
+<ami-fullstack-desktop-menu *ngIf="showMenu" (joinRoom)="joinRoom()" (createRoom)="createRoom()"></ami-fullstack-desktop-menu>
+<ami-fullstack-desktop-join *ngIf="showJoin"></ami-fullstack-desktop-join>
+<ami-fullstack-desktop-create *ngIf="showCreate" (linkGithub)="linkGithub()" (cont)="cont()"></ami-fullstack-desktop-create>
+<ami-fullstack-desktop-link *ngIf="showLink"></ami-fullstack-desktop-link>
+<ami-fullstack-desktop-cont *ngIf="showCont" (connectToRoom)="connectToRoom()" [pphrase]="this.passphrase"></ami-fullstack-desktop-cont>
+<ami-fullstack-desktop-connecting *ngIf="showConn"></ami-fullstack-desktop-connecting>

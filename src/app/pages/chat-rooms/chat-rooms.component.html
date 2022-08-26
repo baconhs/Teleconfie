@@ -1,0 +1,53 @@
+<div class="chat-rooms" (click) = "hideOptions(); hideRoomOptions();">
+	<div class="contacts-chat">
+	    <a [routerLink]="['/phone-contacts']">
+	        <div class="contacts-rec" >
+	            <div class="placement">
+	                Contacts
+	            </div>
+	        </div>
+	    </a>
+	    <div class="chat-rec">
+	        <div class="placement">
+	            Chat
+	        </div>
+	    </div>
+	</div>
+    <div class="contact">
+        <div class="circle-area">
+            <div class="contact-circle" style = "background-color: #ff00aa;">
+                P
+            </div>
+        </div>
+        <a [routerLink]="['/phone-chat']" class="contains">
+        <div>
+            <div class="room">Public Room Chat</div>
+        </div>
+        </a>
+        <div class="options-icon" (click) = "showRoomOptions();$event.stopPropagation()">
+            <img class="icon" src="assets/graphics/icons/show-more-button-with-three-dots.svg">
+            <div class="options" id="publicRoom">
+                <div class="option">Mute all</div>
+                <div class="option" [routerLink] ="['/chat-members']">View Members</div>
+            </div>
+        </div>
+    </div>
+    <div class="contact" *ngFor="let Chat of Chats; let i = index;">
+        <div class="circle-area">
+            <div class="contact-circle">
+                {{Chat[0]}}
+            </div>
+        </div>
+        <a class="contains" (click) = "enterChat(Chat)">
+        <div>
+	        <div class="room">{{Chat}}</div>
+    	</div>
+        </a>
+        <div class="options-icon" (click)="showOptions(i); $event.stopPropagation()">
+            <img class="icon" src="assets/graphics/icons/show-more-button-with-three-dots.svg">
+            <div class="options" id="{{'optionnum' + i}}" style = "height: 55px; padding-left: 0px; padding-top: 7px; font-size:1.5em; text-align: center;">
+                <div class="option">Invite to call</div>
+            </div>
+        </div>
+    </div>
+</div>

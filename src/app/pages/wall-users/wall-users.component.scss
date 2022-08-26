@@ -1,0 +1,112 @@
+html, body {
+	 margin: 0;
+	 height: 100%;
+}
+
+body {
+    background-color: #1D1D1D;
+    color: #E9E9E9;
+    font-size: 20px;
+    margin: none;
+    border: none;
+}
+
+#wall-users {
+	height: 100%;
+	width: 100%;
+}
+
+
+#left-area {
+	float: left;
+	width: 410px!important;
+	height: 460px!important;
+}
+
+#right-area {
+	float: right;
+	width: 410px!important;
+	height: 460px!important;
+}
+
+#mid-area {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	float: left;
+	width: 1100px!important;
+	height: 458px!important;
+}
+
+#swipe-icon-left {
+ 		height: 150px;
+        width: 150px;
+        margin-top: 155px;
+}
+
+#swipe-icon-right {
+ 		height: 150px;
+        width: 150px;
+        margin-top: 155px;
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+}
+
+.profile-area{
+	position: relative;
+	width: 365px;
+	height: 228px;
+	border: 1px solid #494949;
+	background-color: #000000;
+}
+
+.user-icon {
+	height: 228px;
+	width: 365px;
+}
+
+.person-camera {
+	height: 228px;
+	width: 228px;
+}
+
+.mic-camera-background {
+	position: absolute;
+	bottom:0px;
+	left:0px;
+	width: 120px;
+	height: 40px;
+	background-color: #000000;
+	opacity: 0.7;
+}
+
+.mic-camera-area {
+	position: absolute;
+	bottom:0px;
+	left:0px;
+	width: 120px;
+	height: 40px;
+}
+
+
+.mic-icon {
+	width: 35px;
+	padding-right: 8px;
+	height: 35px;
+	filter: invert(45%) sepia(56%) saturate(547%) hue-rotate(90deg) brightness(101%) contrast(88%);
+	opacity: 100%;
+}
+
+.camera-icon {
+	width: 35px;
+	height: 35px;
+	filter: invert(75%) sepia(94%) saturate(2548%) hue-rotate(309deg) brightness(85%) contrast(116%);
+	opacity: 100%;
+}
+
+.logo-wall {
+	position: fixed;
+	top:20px;
+	left:20px;
+	height: 100px;
+	width: 100px;
+}

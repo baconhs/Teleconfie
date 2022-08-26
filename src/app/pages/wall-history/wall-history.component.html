@@ -1,0 +1,15 @@
+<div class="wall-history">
+    <img class="logo-wall" src="assets/graphics/icons/logo.png" alt="">
+    <div class="header-area">
+        <h2 class="history-header"><b>Room History</b></h2>
+    </div>
+    <div class="history-area">
+        <div class="left-area"> </div>
+        <div class="mid-area">
+            <div class="history-lines" *ngFor="let line of lines">
+                {{line}}
+            </div>
+        </div>
+        <div class="right-area"> </div>
+    </div>
+</div>

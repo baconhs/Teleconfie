@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "project-5ecc5": {
+      "hosting": {
+        "frontend": [
+          "project-5ecc5"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "project-5ecc5"
+  }
+}

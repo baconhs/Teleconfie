@@ -1,0 +1,43 @@
+<div class="phone-chat" (click)="hideOptions()">
+    <div class="options" *ngIf='channelOption'>
+        <a [routerLink]="['/chat-members']"> <div class="option" style="color:#e9e9e9; text-decoration: none;">View Members</div> </a>
+        <div class="option">Mute All</div>
+    </div>
+    <div class="contacts-chat">
+        <a [routerLink]="['/phone-contacts']">
+            <div class="contacts-rec">
+                <div class="placement">
+                    Contacts
+                </div>
+            </div>
+        </a>
+        <div class="chat-rec">
+            <div class="placement">
+                Chat
+            </div>
+        </div>
+    </div>
+    <div class="chat-room">
+        <div class="room-title"> <b>Public Room Chat</b> </div>
+        <div class="options-icon">
+            <img class="icon" (click)="showOptions(); $event.stopPropagation()" src="assets/graphics/icons/show-more-button-with-three-dots.svg">
+        </div>
+    </div>
+    <div class="chat-bar" style="text-align: center;">
+        <div class="paperclip-area">
+            <img class="paperclip-icon" src="assets/graphics/icons/paperclip.svg">
+        </div>
+        <div class="inputs-area">
+            <input class="inputs" type="text" placeholder="Message" name="Message" #input [(ngModel)]="body">
+        </div>
+        <div class="send-area" (click)="sendMessage(body); input.value = ''">
+            <img class="send-icon" src="assets/graphics/icons/send.svg" >
+        </div>
+    </div>
+    <div class="messages" #scrollMe [scrollTop]="scrollMe.scrollHeight">
+        <div class="message" *ngFor="let msg of messages">
+            <div class="person" style="color:#E86969; font-size:1.4em;"> {{msg?.From}}: </div>
+            <div class="text"style="font-size:1.4em;"> {{msg?.Body}} </div>
+        </div>
+    </div>
+</div>

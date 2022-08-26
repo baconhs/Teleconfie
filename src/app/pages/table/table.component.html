@@ -1,0 +1,98 @@
+<div class='main' (click)="hideAll()">
+    <div class="break"><img *ngIf="break" (click)="stopBreak()" width="100px" height="100px" src="assets/graphics/icons/break.png" alt=""></div>
+    <img src="assets/graphics/icons/logo-black.png" style='width: 8%; padding-top: 50px;' alt="">
+    <div class='list' *ngIf="showList">
+        <table class='ftable'>
+            <tr *ngFor="let contact of contacts">
+                <td class='ftd' (click)="inviteContact(contact); $event.stopPropagation();">{{contact}}</td>
+            </tr>
+        </table>
+    </div>
+    <div class='confirm' *ngIf="showConf">
+        <table class='yesno'>
+            <tr>
+                <td colspan="2">
+                    Are you sure you want to take a lunch break?
+                </td>
+            </tr>
+            <tr>
+                <td class='tdy' (click)="confirmLB(); $event.stopPropagation();">Yes</td>
+                <td class='tdy' (click)="cancelLB(); $event.stopPropagation();">No</td>
+            </tr>
+        </table>
+    </div>
+    <div class='optiondiv' *ngIf="showOption">
+        <table class="option">
+            <tr>
+                <td class='tdo' (click)="showInviteRoom(); $event.stopPropagation();">
+                    Invite another room
+                </td>
+                <td class='tdo' (click)="showContacts(); $event.stopPropagation();">
+                    Invite from contacts
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class='invite' *ngIf="showInvite">
+        Inviting a room requires a PassPhrase. <br>
+        You can either type it on your mobile device or say it out loud.
+    </div>
+    <table *ngIf="!break && busy" style='margin-left: 33%; width: 35%; margin-top: 720px'>
+        <tr>
+            <td style='width: 25%; text-align: left;'>
+                <img src="{{wallSrc}}" usemap='#wall-map' width='80%' style='margin-top: 50%;' alt=""/>
+                <map name="wall-map">
+                    <area shape="rect" coords="0, 25, 115, 55" (click)='wallUsers()' alt="">
+                    <area shape="rect" coords="0, 80, 115, 55" (click)='wallHistory()' alt="">
+                    <area shape="rect" coords="0, 135, 115, 55" (click)='wallCommits()' alt="">
+                </map>
+            </td>
+            <td style='width: 50%;'>
+                <table class='controls' align='center'>
+                    <tr class='trc'>
+                        <td class='tdc'>
+                            <img src="{{recordSrc}}" height='100%' width='100%' (click)="switchRecord()">
+                        </td>
+                        <td class='tdc'>
+                            <img src="{{shareSrc}}" height='100%' width='100%' (click)="switchShare()">
+                        </td>
+                        <td class='tdc'>
+                            <img src="assets/graphics/icons/capture.png" height='100%' width='100%' (click)="screenShot()">
+                        </td>
+                    </tr>
+                    <tr class='trc'>
+                        <td class='tdc'>
+                            <img src="{{micSrc}}" height='100%' width='100%' (click)="switchMic()">
+                        </td>
+                        <td class='tdc'>
+                            <img src="assets/graphics/icons/leave-call.png" height='100%' width='100%' (click)="leaveCall()">
+                        </td>
+                        <td class='tdc'>
+                            <img src="{{camSrc}}" height='100%' width='100%' (click)="switchCam()">
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td style='width: 25%;'>
+                <table style='margin-top: 35%; margin-left: 10%;'>
+                    <tr>
+                        <td>
+                            <img src="assets/graphics/icons/invite.png" height='100%' width='95%' style='margin-left: 5%;' (click)="showInviteWindow(); $event.stopPropagation();">
+                        </td>
+                        <td>
+                            <img src="assets/graphics/icons/break.png" height='100%' width='95%' style='margin-left: 5%;' (click)="showLunchBreak(); $event.stopPropagation();">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="assets/graphics/icons/chat.png" height='100%' width='95%' style='margin-left: 5%;' (click)="switchChat(); $event.stopPropagation();">
+                        </td>
+                        <td>
+                            <img src="assets/graphics/icons/attach.png" height='100%' width='95%' style='margin-left: 5%;' (click)="showAttachWindow(); $event.stopPropagation();">
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</div>

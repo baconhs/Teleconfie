@@ -1,0 +1,10 @@
+<div class="phone-setup1" style='text-align:center;'>
+    <img class="logo-phone"  src="assets/graphics/icons/logo.png" alt=""> <br>
+    <span style='font-size:2em;'> <b>Welcome to Teleconfie </b> </span> <br>
+    <span style='font-size:1.5em;'>Enter your name to continue </span>
+    <input class="inputs" style='margin-bottom:5%; margin-top:10%;'type="text" [(ngModel)]="name1" placeholder="Name" name="Name">
+    <input class="inputs"type="text" placeholder="Email" name="Email" [(ngModel)]="email1"><br>
+    <a [routerLink]="['/phone-setup2']" (click)="setNameEmail(name1, email1);">
+        <input class='buttons' type="submit" name="Continue" value="Continue">
+    </a>
+</div>

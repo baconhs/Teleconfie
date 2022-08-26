@@ -1,0 +1,15 @@
+<div class='room'>
+    <div id='main-speaker-div' class='main-speaker-div'>
+        <div class='ss-msg' *ngIf='userShare'>You are viewing <b>X</b>'s screen</div>
+        <div class='sr-msg' *ngIf='record'>Your screen is being recorded</div>
+        <video id='main-video' style='border: 2px solid #2699FB' width='100%' height='1080px' src='assets/placeholder.mp4' controls autoplay></video>
+        <video id='main-sharescreen' style='border: 2px solid #2699FB; display: none;' width='1520px' height='930px' src='assets/placeholder.mp4'></video>
+    </div>
+    <div id='chat-div' class='chat-div' style="overflow-y: auto; padding-left: 10px;" #scrollMe [scrollTop]="scrollMe.scrollHeight" *ngIf="showChat">
+        <div class="room-title"> <b>Public Room Chat</b></div>
+        <div class="message" *ngFor="let msg of messages">
+            <div class="person" style="color:#E86969; font-size:1.4em;"> {{msg?.From}}: </div>
+            <div class="text"style="font-size:1.4em;"> {{msg?.Body}} </div>
+        </div>
+    </div>
+</div>

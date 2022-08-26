@@ -1,0 +1,21 @@
+<div class="chat-members" style="overflow-y: auto;" (click) = "hideOptions()">
+     <div class="room-title"> <b>Public Room Chat Members</b> </div>
+     <div *ngFor = "let Member of Members; let i = index;">  
+        <div class = "contact">
+            <div class="circle-area">
+                <div class="contact-circle">
+                    {{Member[0].toUpperCase()}}
+                </div>
+            </div>
+            <div class="contact-name"><div class="text-placement">{{Member}}</div></div>
+            <div class="options-icon" (click)="showOptions(i); $event.stopPropagation()">
+                <img class="icon" src="assets/graphics/icons/show-more-button-with-three-dots.svg">
+                <div class="options" id="{{'optionnum' + i}}">
+                    <div class="option" style="color:#e9e9e9; text-decoration: none;">Show on screen</div>
+                    <div class="option">Mute</div>
+                    <div class="option" (click)="kickMember(i)" style="color:#e86969">Kick</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

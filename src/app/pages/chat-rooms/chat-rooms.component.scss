@@ -1,0 +1,114 @@
+.chat-rooms{
+    height: 100%;
+    overflow-y: auto;
+}
+
+.contacts-chat{ 
+    width: 100%;
+    height:70px;
+    margin-bottom: 2vh;
+}
+
+.contacts-rec{
+    float:left;
+    width: 50%;
+    height: 100%;
+    background-color:#545454;
+    display: table;
+}
+
+.placement {
+    font-size: 1.7em;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color:#e9e9e9;
+    text-decoration: none;
+}
+
+.chat-rec {
+    float: right;
+    width: 50%;
+    height: 100%;
+    display: table;
+}
+
+.contact{
+    margin-left: 5%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-circle{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 1.5em;
+    background-color:#2699fb;
+}
+
+.room{
+    width: 65%;
+}
+
+.options-icon{
+    width: 10%;
+    position: relative;
+}
+
+.icon{
+    vertical-align: top;
+    margin-top:12.5px;
+    margin-bottom:12.5px;
+    height: 35px;
+    filter: invert(88%) sepia(39%) saturate(0%) hue-rotate(268deg) brightness(97%) contrast(97%);
+}
+
+.circle-area{
+    width: 20%;
+}
+
+.room{
+    height:30px;
+    font-weight: bold;
+    font-size: 1.3em;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-decoration: none;
+    color:#e9e9e9;
+}
+
+.message{
+    width: 100%;
+    height: 30px;
+    text-decoration: none;
+    color:#acacac;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.contains{
+    width: 65%
+}
+
+.options{
+    padding-left: 10px;
+    position: absolute;
+    top:0px;
+    padding-top: 5px;
+    left: -132px;
+    width: 160px;
+    background-color:#393939;
+    border-radius: 5px;
+    font-size:1.25em;
+    z-index: 2;
+    display: none;
+}

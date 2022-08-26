@@ -1,0 +1,79 @@
+.chat-members{
+	height: 100%;
+    scrollbar-width:none;
+}
+
+.room-title {
+	margin-left: 2.5%;
+	width: 95%;
+	margin-top:1vh;
+	text-align: center;
+	font-size: 1.5em;
+	border-bottom: 1px solid;
+    border-color: #535353;
+    margin-bottom:2vh;
+}
+
+.contact{
+    margin-left: 5%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-circle{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 1.5em;
+    background-color:#2699fb;
+}
+
+.contact-name{
+    width: 65%;
+}
+
+.options-icon{
+    width: 10%;
+    position: relative;
+}
+
+.icon{
+    vertical-align: top;
+    margin-top:12.5px;
+    margin-bottom:12.5px;
+    height: 35px;
+    filter: invert(88%) sepia(39%) saturate(0%) hue-rotate(268deg) brightness(97%) contrast(97%);
+}
+
+
+.circle-area{
+    width: 20%;
+}
+
+.text-placement {
+    height:20px;
+    margin-top:20px ;
+    margin-bottom:20px;
+    font-weight: bold;
+}
+
+.options{
+    padding-left: 10px;
+    position: absolute;
+    top:0px;
+    padding-top: 5px;
+    left: -150px;
+    width: 190px;
+    height: 100px;
+    background-color:#393939;
+    border-radius: 5px;
+    font-size:1.25em;
+    z-index: 2;
+    display: none;
+}
+

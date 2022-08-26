@@ -1,0 +1,52 @@
+.wall-history{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.logo-wall {
+	position: fixed;
+	top:20px;
+	left:20px;
+	height: 21.739%;
+	width: 5.208%;
+}
+
+.header-area {
+	height: 12%;
+}
+
+.history-header {
+	text-decoration: underline;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+}
+
+.history-area {
+	height: 100%;
+	overflow-y: scroll;
+ 	display: flex;
+ 	flex-direction: row;
+}
+
+.left-area{
+	width: 35%;
+}
+
+.mid-area {
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+}
+
+.right-area{
+	width: 35%;
+}
+
+.history-lines {
+	font-size: 1.3em;
+	text-align: center;
+	margin-bottom: 1%;
+}

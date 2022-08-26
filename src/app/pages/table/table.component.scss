@@ -1,0 +1,110 @@
+html, body {
+    color: #585858;
+}
+.main {
+    height: 100%;
+    background-color: white;
+    color: #1D1D1D;
+    text-align: center;
+}
+
+.controls {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.controls, .tdc {
+    border: 2.5px solid #585858;
+}
+
+.invite {
+    border: 2.5px solid #585858;
+    background-color: #f2f2f2;
+    font-size: 10px;
+    position: absolute;
+    top: 86%;
+    left: 54.8%;
+    z-index: 10;
+}
+
+.optiondiv {
+    position: absolute;
+    top: 86%;
+    left: 54.8%;
+    z-index: 10;
+    width: 15%;
+}
+
+.option {
+    background-color: #f2f2f2;
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0px;
+    font-size: 10px;
+}
+
+.tdo, .option {
+    border: 2px solid #585858;
+}
+
+.tdo {
+    padding: 8px, 10px, 8px, 10px;
+    width: 50%;
+    cursor: pointer;
+}
+
+.list {
+    background-color: #f2f2f2;
+    position: absolute;
+    top: 73%;
+    left: 59.8%;
+    z-index: 10;
+}
+
+.confirm {
+    padding: 5px 8px 0px 5px;
+    position: absolute;
+    top: 84%;
+    left: 59.5%;
+    z-index: 10;
+}
+
+.ftable {
+    border-collapse: collapse;
+    background-color: #f2f2f2;
+    font-size: 10px;
+}
+
+.ftd, .ftable {
+    border: 2.5px solid #585858;
+    cursor: pointer;
+}
+
+.ftd {
+    padding: 5px 8px 5px 8px;
+}
+
+.yesno {
+    background-color: #f2f2f2;
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0px;
+    font-size: 10px;
+}
+
+.tdy, .yesno {
+    border: 2px solid #585858;
+}
+
+.tdy {
+    padding: 8px, 10px, 8px, 10px;
+    width: 50%;
+    cursor: pointer;
+}
+
+.break {
+    position: absolute;
+    float: left;
+    margin-left: 47%;
+    top: 70%;
+}

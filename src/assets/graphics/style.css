@@ -1,0 +1,151 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    background-color: #1D1D1D;
+    color: #E9E9E9;
+    font-family: Noto;
+    font-size: 20px;
+    margin: none;
+    border: none;
+    overflow: hidden;
+}
+
+.button1 {
+    width: 250px;
+    margin-top: 20px;
+    background-color: #B51E23;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#imgs {
+    width: 40%;
+    margin-left: 30%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+div.room {
+    margin: none;
+    border: none;
+}
+
+div.main-speaker-div {
+    border: none;
+    margin: none;
+    background: #000000;
+    float: left;
+    height: 100%;
+}
+
+div.chat-div {
+    border: none;
+    margin: none;
+    height: 100%;
+    background-color: #1D1D1D;
+}
+
+.ss-msg {
+    position: absolute;
+    width: auto;
+    margin-left: 40%;
+    background-color: #2699FB;
+    text-align: center;
+    color: #000000;
+    border-radius: 0px 0px 5px 5px;
+    padding: 6px;
+    font-size: 18px;
+}
+
+.sr-msg {
+    position: absolute;
+    width: auto;
+    margin-left: 40%;
+    background-color: #B51E23;
+    text-align: center;
+    color: #000000;
+    border-radius: 5px 5px 0px 0px;
+    padding: 6px;
+    font-size: 18px;
+    bottom: 0;
+}
+
+@font-face {
+    font-family:Noto;
+    src:url(NotoSans-Regular.ttf);
+}
+
+#inputs {
+    border-radius: 100px;
+}
+
+@media only screen and (min-width: 300px) and (max-width:480px)  {
+
+    body{
+        font-size:30px;
+    }
+    .logo-phone {
+        height: 150px;
+        width: 150px;
+        margin-top:15%;
+        margin-bottom:15%;
+    }
+    .buttons{
+        margin-top: 10%;
+        border:none;
+        background-color:#B51E23;
+        border-radius: 5px;
+        color:white;
+        border:none;
+        font-size:35px;
+        padding: 10px 20px;
+        text-align:center;
+        text-decoration:none;
+    }
+    .inputs {
+        padding:8px 15px;
+        height: 40px;
+        width: 300px;
+        border-radius:3px;
+        border:none;
+        font-size:25px;
+    }
+    #contacts-chat{
+        width: 100%;
+        display:flex;
+        flex-direction:row;
+        height:70px;
+        align-items:center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin-bottom:50%;
+    }
+    #chat-rec{
+        float:left;
+        width: 50%;
+        background-color:#545454;
+        text-align:center;
+        padding-top:20px;
+        padding-bottom:20px;
+        padding-left:5px;
+    }
+    #contacts-rec {
+        float:right;
+        width: 50%;
+        text-align: center;
+        padding-top:20px;
+        padding-bottom:20px;
+    }
+}

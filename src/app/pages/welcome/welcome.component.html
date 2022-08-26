@@ -1,0 +1,15 @@
+<div style='text-align: center;'>
+    <img src="assets/graphics/icons/logo.png" height='150px' style='padding-top: 40px;'>
+    <div style="padding-top: 200px;">
+        <span style='font-size: 24px; display: inline-block; padding-bottom: 10px;'><b>Welcome to Teleconfie</b></span> <br>
+        We detected <b>{{usersNum}}</b> people in the area. <br>
+        <span class='isthiswrong' (click)="calibrate()"><u><i>Is this wrong?</i></u></span> <br>
+        Please connect your mobile devices by scanning the QR Codes below. <br><br>
+        <div id='imgs'>
+            <figure *ngFor="let i of usersIndex">
+                <img src="assets/graphics/icons/qr{{i+1}}.png" height='300px;' style='padding: 30px; margin-right: 20px;'>
+                <figcaption>User #{{i+1}}</figcaption>
+            </figure>
+        </div>
+    </div>
+</div>
